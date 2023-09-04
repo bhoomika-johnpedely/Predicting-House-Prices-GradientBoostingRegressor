@@ -14,54 +14,16 @@ This project aims to predict house prices on a given data set with 80 predictors
 #### Modeling
 - I did a test-train split with 20% test size.
 - To find the right model for my problem, I experimented with 4 modelling techniques that can use both numerical and categorical data to complete a regression task: Random Forest, Gradient Boosting, Elastic Net and SVR.
-- After evaluating the MAE and R-squared for each of these models, I selected GradientBoostingRegressor for this task since it had the least MAE and the highest R-squared.
-- 
-- Describe the machine learning or statistical models you applied.
-- Mention hyperparameter tuning or model selection processes if relevant.
-- Provide evaluation metrics used to assess model performance (e.g., accuracy, RMSE, F1-score).
+- After evaluating the MAE and R-squared for each of these models, I selected GradientBoostingRegressor for this task since it had the least MAE (0.0925) and the highest R-squared (90.34%).
+- I used the whole training dataset to train the model and predicted on the test set that I submitted to Kaggle.
 
 #### Results
--  Present the main results and model performance metrics.
--  Include visualizations, charts, or graphs to support your findings.
--  Discuss any insights gained from the results.
+-  After submitting the predictions. Kaggle gave me a public score of 0.13.
+-  For this challenge, the scores ranged from 0 to 1 with the median score, around 0.14. Lower values are better as long as it doesn't indicate an overfitted model. 
 
 #### Conclusion
--  Summarize the main findings and key takeaways from the project.
--  Reflect on the project's success in achieving the original goal.
+I achieved the goal of predicting house prices using an advanced regression modelling technique. I used log transformation and one-hot encoding in addition to other transformations to make my data more suitable for this modelling task. I selected the model on metrics MAE and R-squared after evaluating it on 4 different models. Then, I predicted the target and received a competitive submission score from Kaggle. Overall, I got the opportunity to use pandas, numpy and scikit-learn libraries to solve an interesting regression problem. 
 
 #### Next Steps
-1. Improve Model Performance:
+If I wanted to increase the scope of the project or ever revisit it, I would experiment with feature-engineering and hyperparameter tuning to improve model performance. 
 
-If the model can be further optimized, outline the steps to achieve higher accuracy or better performance.
-Experiment with different algorithms, ensembles, or advanced techniques.
-2. Feature Engineering:
-
-Explore additional feature engineering possibilities to enhance model performance.
-Consider domain-specific feature creation or transformation.
-3. Cross-Validation and Robustness:
-
-Implement robust cross-validation techniques to ensure your model's reliability.
-Test the model's performance on different subsets of the data.
-4. Hyperparameter Tuning:
-
-Optimize model hyperparameters using techniques like grid search or Bayesian optimization.
-5. Interpretability:
-
-Enhance the interpretability of your model's predictions using techniques like SHAP values or feature importance analysis.
-6. Deployment:
-
-If applicable, explore the deployment of your model into a real-world application or system.
-7. Further Analysis:
-
-Consider additional analyses or experiments related to the problem, which may uncover more insights.
-8. Documentation and Sharing:
-
-Document your code and findings for future reference.
-Share your work on platforms like GitHub or personal blog to showcase your skills.
-9. Engage with Kaggle Community:
-
-Participate in discussions and forums related to your project on Kaggle.
-Seek feedback from the community to improve your approach.
-10. Expand the Dataset:
-
-If possible, try to collect more data or find additional related datasets to enrich your analysis.
